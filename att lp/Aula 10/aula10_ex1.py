@@ -1,7 +1,7 @@
 import os # biblioteca
 from pathlib import Path # biblioteca
 
-def listar_arquivos(diretorio="E:\\senai"):  # nome da variável
+def listar_arquivos(diretorio="C:\\senai"):  # nome da variável
     arquivos = os.listdir(diretorio) # os arquivos de dentro do diretorio devem ser listados 
     print(arquivos)  # imprime o nome de cada arquivo 
     return arquivos # retorna "arquivos"
@@ -23,5 +23,8 @@ def salvar_tamanho_arquivo(nome_arquivo, nome_saida): # nome da variável
     else:
         print("Arquivo não encontrado.") # imprime que deu errado, pois o arquivo não está de acordo
         
-tamanho = obter_tamanho_arquivo("E:\\senai\\ativ8.c")
+tamanho = obter_tamanho_arquivo("C:\\senai\\doce.txt")
+
 print(tamanho)
+
+salvar_tamanho_arquivo("C:\\senai\\doce.txt", "C:\\senai\\coco.txt")
